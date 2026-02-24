@@ -1,0 +1,45 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html, body, #root{
+    height: 100%;
+    width: 100%;
+}
+main{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+  padding: 1.5rem;
+}
+main .left, main .right{
+  height: 100%;
+  flex-basis: 50%;
+  border-radius: 0.5rem;
+}
+
+main .left{
+  background-color: black;
+  position: relative;
+}
+
+main .left .review{
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  background-color: royalblue;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  user-select: none;
+  color: white;
+}
+
+main .right{
+  background-color: rgb(86, 86, 86);
+  padding: 1rem 2rem;
+  overflow-y: auto  ;
+}
